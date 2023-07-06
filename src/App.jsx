@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import './App.css';
+import 'src/App.css';
 
 export function Header() {
   let [expanded, setExpanded] = React.useState(false);
