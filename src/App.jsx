@@ -210,7 +210,7 @@ const TabsBar = (tabsData) => {
           initedRef.current = true;
           setActiveTab(new URLSearchParams(location.search).get('tab') || 'all');
       }
-  }, [activeTab]);
+  });
 
   const onSelectInput = event => {
       setActiveTab(event.target.value);
@@ -229,7 +229,7 @@ const TabsBar = (tabsData) => {
       if (newHasRightScroll !== hasRightScroll) {
           setHasRightScroll(newHasRightScroll);
       }
-  }, [hasRightScroll]);
+  });
 
   const onArrowCLick = () => {
       const scroller = ref.current.querySelector('.section__panel:not(.section__panel_hidden)');
